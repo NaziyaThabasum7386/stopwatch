@@ -32,6 +32,13 @@ export default function App() {
     setIsRunning(false);
   };
 
+  // Verification of the initial state of the stopwatch
+  useEffect(() => {
+    console.log("Initial state of the stopwatch:");
+    console.log("isRunning:", isRunning);
+    console.log("elapsedTime:", elapsedTime);
+  }, []);
+
   return (
     <div>
       <h1>Stop Timer</h1>
